@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {ScrollView, Text, View, ImageBackground} from 'react-native';
+import {ScrollView, Text, View, ImageBackground, Image} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5'; 
 import { createBottomTabNavigator } from "react-navigation";
 import StarRating from 'react-native-star-rating';
@@ -49,7 +49,21 @@ class Ministerios extends React.Component {
     render() {
       //const { dados } = this.props.navigation.state.params
       return (
-        <View><Text>DOIS</Text></View>
+        <View><Text>DOIS</Text>
+         <FlatList
+          data={[
+            {key: 'Devin'},
+            {key: 'Jackson'},
+            {key: 'James'},
+            {key: 'Joel'},
+            {key: 'John'},
+            {key: 'Jillian'},
+            {key: 'Jimmy'},
+            {key: 'Julie'},
+          ]}
+          renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
+        /></View>
+        
   
       );
     }
@@ -99,9 +113,11 @@ class Ministerios extends React.Component {
       Educacao: {
         screen: Educacao,
         navigationOptions: {
-          tabBarLabel: "Educação",
+          tabBarLabel: " ",
           tabBarIcon: ({ tintColor }) => (
-            <Icon name="graduation-cap" size={30} color={tintColor} />
+            <Image style={{width: 50, height: 50}}
+            source={require('../images/graduation.png')}
+          />
           )
         }
       },
@@ -110,16 +126,20 @@ class Ministerios extends React.Component {
         navigationOptions: { 
           tabBarLabel: "Saúde",
           tabBarIcon: ({ tintColor }) => (
-            <Icon name="hospital" size={30} color={tintColor} />
+          <Image style={{width: 50, height: 50}}
+            source={require('../images/graduation.png')}
+          /> 
           )
         }
       },
       Seguranca: {
         screen: Seguranca,
         navigationOptions: {
-          tabBarLabel: "Seguranca",
+          tabBarLabel: " ",
           tabBarIcon: ({ tintColor }) => (
-            <Icon name="shield-alt" size={30} color={tintColor} />
+            <Image style={{width: 50, height: 50}}
+            source={require('../images/shield.png')}
+          />
           )
         }
       },
@@ -135,9 +155,11 @@ class Ministerios extends React.Component {
       Infraestrutura: {
         screen: Infraestrutura,
         navigationOptions: {
-          tabBarLabel: "Infraestrutura",
+          tabBarLabel: " ",
           tabBarIcon: ({ tintColor }) => (
-            <Icon name="road" size={30} color={tintColor} />
+          <Image style={{width: 50, height: 50}}
+            source={require('../images/train.png')}
+          /> 
           )
         }
       }, 

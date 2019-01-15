@@ -3,7 +3,7 @@ import {FlatList, SafeAreaView, Text, TouchableOpacity, StyleSheet, Image, View,
 import Icon from 'react-native-vector-icons/FontAwesome5'; 
 import { createBottomTabNavigator } from "react-navigation";
 
-export default class Home extends Component { 
+export default class Legislativo extends Component { 
 
   render() {
     return (
@@ -20,7 +20,7 @@ export default class Home extends Component {
           <TouchableOpacity onPress={() => this.props.navigation.navigate("Legislativo")}>
             <Image style={{width: 45, height: 45, zIndex:1, marginTop: 3}} source={require('../images/book2.png')} />
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => this.props.navigation.navigate("Industria")}>
+          <TouchableOpacity onPress={() => this.props.navigation.navigate("Saude")}>
             <Image style={{width: 35, height: 35, zIndex:1, marginTop: 6}} source={require('../images/globe.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => this.props.navigation.navigate("Saude")}>
@@ -49,8 +49,7 @@ export default class Home extends Component {
  
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#c8d6e5'
+    flex: 1,    
   },
   toolbar: {
     color: '#FF00FF',

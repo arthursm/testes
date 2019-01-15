@@ -6,7 +6,7 @@ import StarRating from 'react-native-star-rating';
 import { FormLabel, FormInput, FormValidationMessage } from 'react-native-elements';
 import RNPickerSelect from 'react-native-picker-select';
 
-export default class Saude extends React.Component {
+export default class Educacao extends React.Component {
     
     state = {
       starCount: 3.5,
@@ -96,14 +96,14 @@ export default class Saude extends React.Component {
               Luta contra AIDS / Câncer
             </Text>
           </View> 
-            {/* <View style={styles.startHealth}> 
+              <View style={styles.startHealth}> 
                 <StarRating disabled={false} starSize={30} maxStars={5} halfStarEnabled={true} rating={this.state.starCount} selectedStar={(rating) => this.onStarRatingPress(rating)}/>
                 <StarRating disabled={false} starSize={30} maxStars={5} halfStarEnabled={true} rating={this.state.starCount} selectedStar={(rating) => this.onStarRatingPress(rating)}/>
                 <StarRating disabled={false} starSize={30} maxStars={5} halfStarEnabled={true} rating={this.state.starCount} selectedStar={(rating) => this.onStarRatingPress(rating)}/>
                 <StarRating disabled={false} starSize={30} maxStars={5} halfStarEnabled={true} rating={this.state.starCount} selectedStar={(rating) => this.onStarRatingPress(rating)}/>
                 <StarRating disabled={false} starSize={30} maxStars={5} halfStarEnabled={true} rating={this.state.starCount} selectedStar={(rating) => this.onStarRatingPress(rating)}/>
                 <StarRating disabled={false} starSize={30} maxStars={5} halfStarEnabled={true} rating={this.state.starCount} selectedStar={(rating) => this.onStarRatingPress(rating)}/>
-          </View> */}
+              </View>
             </View>
           <View><Text style={styles.lawTextHealth}>Legislação</Text></View>
                 <View style={styles.lawHealth}> 
